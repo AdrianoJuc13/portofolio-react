@@ -1,10 +1,19 @@
 import React from "react";
-import "./App.css"; // Ensure this path is correct
+import { Route, Routes, BrowserRouter } from "react-router-dom";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div className="App">
-      My name is Adriano Jucan. This is my personal portofolio.
+      <BrowserRouter basename="/portofolio">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/cv" element={<div>cv</div>} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
