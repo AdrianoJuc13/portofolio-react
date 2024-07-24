@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/AdrianoJuc13/portofolio-react/static/css/main.e1be50a2.css",
-    "main.js": "/AdrianoJuc13/portofolio-react/static/js/main.1c00fb46.js",
-    "static/js/453.75eaeb89.chunk.js": "/AdrianoJuc13/portofolio-react/static/js/453.75eaeb89.chunk.js",
-    "index.html": "/AdrianoJuc13/portofolio-react/index.html",
-    "main.e1be50a2.css.map": "/AdrianoJuc13/portofolio-react/static/css/main.e1be50a2.css.map",
-    "main.1c00fb46.js.map": "/AdrianoJuc13/portofolio-react/static/js/main.1c00fb46.js.map",
-    "453.75eaeb89.chunk.js.map": "/AdrianoJuc13/portofolio-react/static/js/453.75eaeb89.chunk.js.map"
+    "main.css": "/portofolio-react/static/css/main.e1be50a2.css",
+    "main.js": "/portofolio-react/static/js/main.df4c44c8.js",
+    "static/js/453.75eaeb89.chunk.js": "/portofolio-react/static/js/453.75eaeb89.chunk.js",
+    "index.html": "/portofolio-react/index.html",
+    "main.e1be50a2.css.map": "/portofolio-react/static/css/main.e1be50a2.css.map",
+    "main.df4c44c8.js.map": "/portofolio-react/static/js/main.df4c44c8.js.map",
+    "453.75eaeb89.chunk.js.map": "/portofolio-react/static/js/453.75eaeb89.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e1be50a2.css",
-    "static/js/main.1c00fb46.js"
+    "static/js/main.df4c44c8.js"
   ]
 }
