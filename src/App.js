@@ -10,7 +10,7 @@ import Contact from "./pages/Contact";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="portofolio-react">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
