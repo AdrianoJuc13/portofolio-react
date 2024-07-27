@@ -31,7 +31,9 @@
 }
 
 .NavBar {
-  background: var(--nav-color);
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  border: none;
   position: sticky;
   top: 0;
   width: 100%;
@@ -39,7 +41,7 @@
   flex-direction: row;
   justify-content: space-between;
   .title {
-    color: white;
+    color: aqua;
     margin-left: 3%;
     display: flex;
     text-align: center;
@@ -52,18 +54,17 @@
     justify-content: space-between;
     .Link {
       text-decoration: none;
-      color: white;
+      color: aqua;
       width: 7rem;
       height: 3rem;
       display: flex;
       justify-content: center;
       text-align: center;
       align-items: center;
-      color: var(--secondary-color);
-    
+   
       &:hover {
         scale: 1.07;
-        color: aqua;
+        color: rgb(11, 103, 232);
       }
     }
   
@@ -125,3 +126,58 @@
   }
 }
 
+.contact-section {
+  min-width:50%;
+  margin: 2rem;
+  padding: 2rem;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid var(--primary);
+      border-radius: 5px;
+      font-size: 1rem;
+      color: var(--text-color);
+      background-color: var(--secondary-color);
+    }
+
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+  }
+
+  .submit-button {
+    width: 20%;
+    padding: 0.5rem 1rem;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: (var(--accent-color), 10%);
+    }
+  }
+}
