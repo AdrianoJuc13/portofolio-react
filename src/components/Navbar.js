@@ -1,17 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import "../App.scss";
 
 const Navbar = () => {
   return (
     <nav className="NavBar">
-      <div className="title">Adriano Jucan Portofolio</div>
+      <Link to="/" style={{ textDecoration: "none" }}>
+        <div className="title">
+          <img
+            src={`${process.env.PUBLIC_URL}/logo192.png`}
+            alt="Adriano Jucan"
+          />
+          Adriano Jucan Portofolio
+        </div>
+      </Link>
       <div className="buttons">
         <Link className="Link" to="/">
           Home
         </Link>
         <Link className="Link" to="/cv">
-          CV
+          Resume
         </Link>
         <Link className="Link" to="/projects">
           Projects

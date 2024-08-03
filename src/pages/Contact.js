@@ -32,6 +32,7 @@ const Contact = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
+            placeholder="John"
             required
           />
           <label htmlFor="surname">Surname</label>
@@ -41,6 +42,7 @@ const Contact = () => {
             name="surname"
             value={formData.surname}
             onChange={handleChange}
+            placeholder="Smith"
             required
           />
         </div>
@@ -53,6 +55,7 @@ const Contact = () => {
             value={formData.email}
             onChange={handleChange}
             required
+            placeholder="email@email.com"
           />
         </div>
         <div className="form-group">
@@ -62,6 +65,7 @@ const Contact = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
+            placeholder="Hi!"
             required
           />
         </div>
