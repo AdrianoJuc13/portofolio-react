@@ -161,22 +161,28 @@
   }
 
   .download-button {
-    background-color:rgb(255, 255, 255);
-    box-shadow: 0 0 4px inset rgba(255, 255, 255, 0.269);
-    color: black;
     font-weight: large;
     text-decoration: none;
+    
+    width: 10rem;
 
     border-radius: 5px;
     padding: 0.5rem 1rem;
     margin-bottom: 5rem;
-    width: 10rem;
-    
     cursor: pointer;
-    transition: background-color 0.3s, width 0.3s ;
+    background: white;
+    color: black;
+
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.1s, width 0.1s;
+
     &:hover {
-      background: (rgba(185, 104, 199,0.3));
-      width: 12rem;
+      box-shadow: 0 0 2rem white;
+      color: white;
+      background: rgba(0,0,0,0.5);
+      width:12rem;
     }
   }
 }

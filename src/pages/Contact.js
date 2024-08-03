@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -16,8 +17,21 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission, e.g., send data to an API or email service
-    alert(formData.surname);
-    console.log("Form data submitted:", formData);
+    alert(
+      `${formData.name}\n${formData.surname}\n${formData.email}\n${formData.message}`
+    );
+    emailjs
+      .send("service_j9tpdga", "template_yk42pc9", formData, {
+        publicKey: "yzL43i7iUh6SBz9Xw",
+      })
+      .then(
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        function (err) {
+          console.log("FAILED...", err);
+        }
+      );
   };
 
   return (
