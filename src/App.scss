@@ -298,3 +298,77 @@
     }
   }
 }
+
+.projects-section{
+  margin-bottom: 5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  .image_pop{
+    position:fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    img{
+      max-width: 90vw;
+      max-height: 90vh;
+      cursor: pointer;
+    }
+  }
+  .capsule{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    
+    
+    .description{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      .label{
+        font-size: larger;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+      }
+      p {
+        display: flex;
+        text-align: start;
+        width: 90%;
+        min-height: 50%;
+        background-color: rgba(255,255,255,0.1);
+        box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.5);
+        color: white;
+        padding: 2rem;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        
+        line-height: 1.6;
+        transition:background-color 0.1s, box-shadow 0.1s;
+        &:hover{
+          background-color: black;
+          box-shadow: 0 0 2rem rgba(255, 255, 255, 1);
+        }
+      }
+    }
+    .images{
+      display: flex;
+      flex-direction: row;
+      max-width: 100%;
+      overflow-x: auto;
+      flex-wrap: wrap;
+      cursor: pointer;
+      img{
+        height: 30vh;
+        margin: 2rem 1rem;
+        border-radius: 0.1rem; 
+       
+      }
+    }
+  }
+}

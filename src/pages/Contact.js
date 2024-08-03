@@ -16,10 +16,6 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission, e.g., send data to an API or email service
-    alert(
-      `${formData.name}\n${formData.surname}\n${formData.email}\n${formData.message}`
-    );
     emailjs
       .send("service_j9tpdga", "template_yk42pc9", formData, {
         publicKey: "yzL43i7iUh6SBz9Xw",
@@ -27,9 +23,11 @@ const Contact = () => {
       .then(
         function (response) {
           console.log("SUCCESS!", response.status, response.text);
+          alert("Email sent succesfully!");
         },
         function (err) {
           console.log("FAILED...", err);
+          alert("Failed to send the email!");
         }
       );
   };
