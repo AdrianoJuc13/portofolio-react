@@ -4,7 +4,7 @@
   --accent-color: #00BFAE; // Bright Teal
   --text-color: #333333; // Charcoal Gray
   --nav-color: rgba(27, 27, 36, 0.9);
-  --hover-color:rgba(0, 255, 0, 0.855);
+  --hover-color:rgb(110, 58, 207);
 }
 
 .App {
@@ -12,6 +12,8 @@
   text-align: center;
   
   font-size: larger;
+  font-family: cursive;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,7 +35,7 @@
 
 .NavBar {
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(0.2rem);
   border: none;
   position: sticky;
   top: 0;
@@ -41,9 +43,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  
   .title {
     cursor: pointer;
-    color: white;
+    color: rgb(110, 58, 207);
+    font-weight: 500;
+    font-size: larger;
+    
     display: flex;
     text-align: center;
     align-self: center;
@@ -51,8 +57,14 @@
     align-items: center;
     gap: 1rem;
     img{
-      width: 3rem;
+      width: 4rem;
       margin: 0.5rem;
+      border-radius: 100%;
+      transition: all 0.3s;
+      &:hover{
+        transform:rotate(360deg);
+        transition: all 0.5s;
+      }
     }
     
   }
@@ -64,23 +76,27 @@
     align-items: center;
     gap: 1rem;
     .Link {
-      text-decoration: none;
-      color: white;
-
       width: 7rem;
       height: 3rem;
+
+      text-decoration: none;
+      color: white;
+      background: rgb(110, 58, 207);
 
       display: flex;
       justify-content: center;
       text-align: center;
       align-items: center;
-      transition: all 0.1s;
 
-      border-radius: 3rem;
-      box-shadow: 0 0 0.5rem inset rgba(255,255,255,0.2);
+      border: 0.01rem solid transparent;
+      border-radius: 1rem;
+
+      transition: all 1s;
       &:hover{
-        box-shadow: 0 0 1rem  white;
-        color: var(--hover-color);
+        border: 0.01rem solid white;
+        box-shadow:  0 0 0.5rem inset white ;
+
+        transition: all 0.2s;
         cursor: pointer;
       }
     }
@@ -130,10 +146,13 @@
       text-align: center;
       align-self: center;
 
-      box-shadow: 0 0 1rem inset rgba(255,255,255,0.5);
+      background: rgb(110, 58, 207);
+      border: 0.01rem solid transparent;
+      transition: all 1s;
       &:hover{
-        box-shadow: 0 0 1rem  white;
-        color: var(--hover-color);
+        box-shadow: 0 0 0.5rem inset white;
+        border: 0.01rem solid white;
+        transition: all 0.2s;
         cursor: pointer;
       }
     }
@@ -204,18 +223,21 @@
   }
   
   p {
-    background-color: rgba(255,255,255,0.1);
-    box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.5);
-    color: white;
+    background-color: rgba(255, 255, 255, 0.176);
+    
+    color: black;
     padding: 2rem;
     margin-bottom: 1rem;
     border-radius: 1rem;
     
     line-height: 1.6;
     transition:background-color 0.1s, box-shadow 0.1s;
+    transition: all 0.7s;
+    border: 1px solid transparent;
     &:hover{
-      background-color: black;
-      box-shadow: 0 0 2rem rgba(255, 255, 255, 1);
+      box-shadow: 0 0 3rem inset rgba(253, 253, 253, 0.7);
+      transition: all 0.2s;
+      border: 1px solid white
     }
   }
 }
@@ -277,24 +299,29 @@
   }
 
   .submit-button {
-    width: 10rem;
-    height: 2rem;
+    width: 12rem;
+    height: 4rem;
     padding: 0.5rem 1rem;
     margin-top: 4rem;
 
-    background: white;
-    color: black;
 
-    border: 1px solid white;
-    border-radius: 5px;
+    background: rgb(110, 58, 207);
+    color: white;
+    font-family: cursive;
+    font-size: larger;
+    font-weight: 500;
     cursor: pointer;
-    transition: background-color 0.1s, width 0.1s;
+    
+    border: 0.01rem solid transparent;
+    border-radius: 1rem;
 
-    &:hover {
-      box-shadow: 0 0 2rem white;
-      color: white;
-      background: rgba(0,0,0,0.5);
-      width:12rem;
+    transition: all 1s;
+    &:hover{
+      border: 0.01rem solid white;
+      box-shadow:  0 0 0.5rem inset white ;
+
+      transition: all 0.2s;
+      cursor: pointer;
     }
   }
 }
@@ -335,6 +362,10 @@
         font-size: larger;
         margin-top: 4rem;
         margin-bottom: 1rem;
+        color: black;
+        font-size: 600;
+        font-weight: bold;
+        
       }
       p {
         display: flex;
@@ -342,17 +373,16 @@
         width: 90%;
         min-height: 50%;
         background-color: rgba(255,255,255,0.1);
-        box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.5);
-        color: white;
+        color: black;
         padding: 2rem;
         margin-bottom: 1rem;
         border-radius: 1rem;
         
         line-height: 1.6;
-        transition:background-color 0.1s, box-shadow 0.1s;
+        transition: all 0.5s;
         &:hover{
-          background-color: black;
-          box-shadow: 0 0 2rem rgba(255, 255, 255, 1);
+          box-shadow: 0 0 2rem inset rgba(255, 255, 255, 1);
+          transition: all 0.2s;
         }
       }
     }

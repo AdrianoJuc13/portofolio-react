@@ -1,12 +1,12 @@
 import React from "react";
 import "../App.scss";
-import my_img from "../assets/my_photo.jpg";
+// import my_img from "../assets/my_photo.jpg";
 const About = () => {
   return (
     <div className="about-section">
-      <div className="image">
+      {/* <div className="image">
         <img src={my_img} alt="Adriano Jucan" />
-      </div>
+      </div> */}
       <p>
         I am a 24-year-old robotics enthusiast, driven by a lifelong dream of
         creating humanoid robots and enhancing human capabilities through

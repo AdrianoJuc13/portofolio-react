@@ -7,7 +7,7 @@ const Navbar = () => {
       <Link to="/" style={{ textDecoration: "none" }}>
         <div className="title">
           <img
-            src={`${process.env.PUBLIC_URL}/logo192.png`}
+            src={`${process.env.PUBLIC_URL}/logo_2025.png`}
             alt="Adriano Jucan"
           />
           Adriano Jucan Portofolio
